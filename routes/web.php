@@ -30,10 +30,6 @@ Route::get('users/{id}/coments/{coments}', function ($id , $coment) {
     dd('coment no '. $coment . ' of user '.$id);
 });
 
-/*Route::get('profile', function () {
-    //dd('hi from profile');
-    return redirect()->route('my_new_profile');
-});*/
 
 Route::redirect('profile' , 'new_profile' , 301);
 Route::redirect('google' , 'https://www.google.ps' , 301);
